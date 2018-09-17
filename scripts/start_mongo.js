@@ -47,7 +47,7 @@ if (operativeSystem) {
     console.error('Introduced operating system not recognized');  
   }
 } else {
-  console.error('Please introduce operative system as an argument \n Example: npm run mongo -- --so linux');
+  console.error('Please introduce operative system as an argument \n Example: npm run mongo -- --os linux');
 }
 
 process.on('SIGINT', function(code, signal) {
