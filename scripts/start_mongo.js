@@ -30,8 +30,8 @@ if (operativeSystem) {
   
     });
   } else if (operativeSystem === globalEntities.operative_system.WINDOWS){
-    var mongoRoute = resolve('%ProgramFiles%\\MongoDB\\Server\\3.6\\bin\\mongod.exe'); //ruta del mongod.exe
-    var dbRoute = resolve('%HOMEPATH%\\Documents\\Programming\\mongoDB\\DB'); //ruta on es guardara la base de dades
+    var mongoRoute = resolve('%ProgramFiles%\\MongoDB\\Server\\3.6\\bin\\mongod.exe'); //mongod.exe path
+    var dbRoute = resolve('%HOMEPATH%\\Documents\\Programming\\mongoDB\\DB'); //MongoDB DB path
     
     var prc = spawn(mongoRoute,  ['--dbpath', dbRoute]);
     
