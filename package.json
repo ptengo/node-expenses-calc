@@ -1,0 +1,32 @@
+{
+  "name": "expenses-calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "set DEBUG=expcalc:* && nodemon index.js",
+    "start": "set DEBUG=expcalc:* && node index.js",
+    "mongo": "node ./scripts/start_mongo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptengo/node-expenses-calc.git"
+  },
+  "author": "Victor Puigcerver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptengo/node-expenses-calc/issues"
+  },
+  "homepage": "https://github.com/ptengo/node-expenses-calc#readme",
+  "dependencies": {
+    "debug": "^4.0.1",
+    "istanbul-middleware": "^0.2.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.4",
+    "mongoose": "^5.2.14"
+  }
+}
